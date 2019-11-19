@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stonejianbu</title>
+</head>
+<body>
+
+<h5>定时-循环任务插件</h5>
+<label>设置延时(ms)：</label>
+<input type="number" name="delay_time" id="delay_time" value="0" />
+<label>设置时隔(ms)：</label>
+<input type="number" name="period_time" id="period_time" value="500" />
+<label>增加线程：</label>
+<input type="number" name="period_time" id="threads" value="1" />
+<label>添加任务：</label>
+<textarea id="task">location.reload(); // 刷新当前页面</textarea>
+
+
+<button type="button" class="btn btn-default" id="btn_start">执行</button>
+<button type="button" class="btn btn-default" id="btn_stop">暂停</button>
+
+<script src="../popup.js"></script>
+</body>
+</html>
